@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_clear">15dp</dimen>
+    <dimen name="marzin_zero">34dp</dimen>
+    <dimen name="margin_plus_minus">15dp</dimen>
+    <dimen name="margin_procent">15dp</dimen>
+    <dimen name="margin_7">15dp</dimen>
+    <dimen name="margin_8">15dp</dimen>
+    <dimen name="margin_9">15dp</dimen>
+    <dimen name="margin_4">15dp</dimen>
+    <dimen name="margin_5">15dp</dimen>
+    <dimen name="margin_6">15dp</dimen>
+    <dimen name="margin_1">15dp</dimen>
+    <dimen name="margin_2">15dp</dimen>
+    <dimen name="margin_3">15dp</dimen>
+    <dimen name="margin_0">15dp</dimen>
+    <dimen name="margin_tochka">15dp</dimen>
+    <dimen name="margin_linear">30dp</dimen>
+</resources>
