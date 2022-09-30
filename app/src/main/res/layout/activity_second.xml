@@ -2,118 +2,121 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/dark_white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".secondAxtivity">
+    android:background="@color/dark_white"
+    tools:context=".SecondActivity">
 
     <FrameLayout
         android:id="@+id/frame"
-        android:background="@color/dark_gray2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/dark_gray2"
         tools:ignore="MissingConstraints">
+
         <ImageButton
-            android:layout_marginStart="10dp"
-            android:layout_marginVertical="15dp"
-            android:background="@drawable/ic_baseline_menu_24"
             android:layout_width="30dp"
-            android:layout_height="42dp"/>
+            android:layout_height="42dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_baseline_menu_24" />
+
         <ImageButton
-            android:layout_marginEnd="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_gravity="end"
             android:layout_marginTop="18dp"
-            android:background="@drawable/ic_search"
-            android:layout_width="35dp"
-            android:layout_height="35dp"/>
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_search" />
     </FrameLayout>
 
     <TextView
         android:id="@+id/text_police"
-        android:layout_marginTop="44dp"
-        android:textColor="@color/dark_gray2"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:text="Policies"
-        app:layout_constraintTop_toBottomOf="@id/frame"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Policies"
+        android:textColor="@color/dark_gray2"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame" />
 
 
     <LinearLayout
         android:id="@+id/linear_second"
-        android:layout_marginTop="16dp"
-       app:layout_constraintTop_toBottomOf="@+id/text_police"
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/text_police"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.button.MaterialButton
+            style="@style/white_AnotherButton"
             android:layout_marginHorizontal="16dp"
             android:paddingVertical="16dp"
-            android:textAlignment="textStart"
             android:text="Policy"
-            android:textColor="@color/dark_gray2"
-            style="@style/white_AnotherButton"/>
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_gray2" />
+
         <com.google.android.material.button.MaterialButton
-            android:paddingVertical="16dp"
+            style="@style/white_AnotherButton"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            android:textAlignment="textStart"
+            android:paddingVertical="16dp"
             android:text="Product Category"
-            android:textColor="@color/dark_gray2"
-            style="@style/white_AnotherButton"/>
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_gray2" />
+
         <com.google.android.material.button.MaterialButton
+            style="@style/white_AnotherButton"
             android:layout_marginHorizontal="16dp"
-            android:paddingVertical="16dp"
             android:layout_marginBottom="8dp"
-            android:textAlignment="textStart"
-            android:text="Origin Country"
-            android:textColor="@color/dark_gray2"
-            style="@style/white_AnotherButton"/>
-        <com.google.android.material.button.MaterialButton
-            android:layout_marginBottom="2dp"
-            android:layout_marginHorizontal="16dp"
             android:paddingVertical="16dp"
+            android:text="Origin Country"
             android:textAlignment="textStart"
+            android:textColor="@color/dark_gray2" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/white_AnotherButton"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="2dp"
+            android:paddingVertical="16dp"
             android:text="brand"
-            android:textColor="@color/dark_gray2"
-            style="@style/white_AnotherButton"/>
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_gray2" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/text_police_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:textStyle="bold"
+        android:text="Current Policies"
         android:textColor="@color/dark_gray2"
         android:textSize="30dp"
-        android:text="Current Policies"
-        app:layout_constraintTop_toBottomOf="@id/linear_second"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintTop_toBottomOf="@id/linear_second" />
 
     <Button
-        android:onClick="exportClick"
         android:id="@+id/export"
-        android:textStyle="bold"
-        android:textSize="12sp"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_button"
+        android:onClick="exportClick"
         android:text="Export as CSV"
         android:textColor="@color/white"
-        android:layout_marginTop="60dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_police_current"
-        android:background="@drawable/bg_button"
-        android:layout_width="180dp"
-        android:layout_height="55dp"/>
-
-
+        app:layout_constraintTop_toBottomOf="@id/text_police_current" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,13 +28,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_click).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView textView=findViewById(R.id.text_view);
-                String textView2=textView.getText().toString();
+                TextView textView = findViewById(R.id.text_view);
+                String textView2 = textView.getText().toString();
 
 
-
-                Intent intent = new Intent(MainActivity.this, secondAxtivity.class);
-                intent.putExtra("key1",textView2);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("key1", textView2);
 
                 startActivity(intent);
             }
