@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Base.Bottom" parent="Widget.MaterialComponents.Button">
         <item name="android:layout_width">70dp</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="cornerRadius">250dp</item>
-        <item name="android:textSize">34dp</item>
+        <item name="android:textSize">34sp</item>
     </style>
     <style name="Gray_Bottom" parent="Base.Bottom">
         <item name="backgroundTint">@color/gray</item>
@@ -21,6 +21,22 @@
     <style name="darkGray_Bottom" parent="Base.Bottom">
         <item name="backgroundTint">@color/dark_gray</item>
         <item name="background">@color/dark_gray</item>
+    </style>
+
+
+    <style name="Base.AnotherButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="white_AnotherButton" parent="Base.AnotherButton" tools:ignore="ResourceCycle">
+        <item name="background">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
     </style>
 
 
